@@ -12,10 +12,17 @@ let names = ["A", "B", "C", "D"];
 names.forEach((name) => {
   // within the function I can tell what I want to do with the items
   $('ul').append(
-   '<li> ${name} </li>'
+   "<li>" +name+ "</li>"
   );
 
 
-  console.log(name);
+ // console.log(name);
 });
 
+
+var array = ["slide 1", "slide 2", "slide 3", "slide 4", "slide 5"];
+array.forEach(function(item) {
+  $('ul').append("<li>" + item + "</li>");
+});
+
+if (names="A") {$('li').css('background-color', 'blue')}
