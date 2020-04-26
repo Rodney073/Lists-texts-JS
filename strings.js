@@ -25,4 +25,13 @@ array.forEach(function(item) {
   $('ul').append("<li>" + item + "</li>");
 });
 
-if (names="A") {$('li').css('background-color', 'blue')}
+
+
+
+let additionalBlock = {
+  title: "Added with javascript",
+  text: "This block was added using JavaScript's jQuery library. How awesome!"
+};
+
+
+$('main').append('<h1>'+ additionalBlock.title + '</h1>'+'<p>' +additionalBlock.text+'</p>');
